@@ -1,0 +1,38 @@
+@import'./variables';
+@import'./testimonial';
+@import'./social-media';
+@import'./portfolio';
+body{
+    
+    background-color: #c3cfe2;
+    padding: 10px 10px 10px 10px;
+    ;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px ;
+    grid-template-areas: 
+    " h h h h h h h h h h h m"
+    " h h h h h h h h h h h m"
+    " f f f f f f f f f f f m";
+}
+.testimonial{
+    grid-area: h;
+}
+.social-media{
+    grid-area: m;
+}
+
+.portfolio-items{
+    grid-area: f;
+}
+
+
+
+
+
+
